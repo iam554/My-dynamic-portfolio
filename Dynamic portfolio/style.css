@@ -1,0 +1,123 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #e0f2f7;
+    color: #333;
+    line-height: 1.6;
+    padding-bottom: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+body.dark-mode {
+    background-color: #222;
+    color: #eee;
+}
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+header img {
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 10px;
+}
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+body.dark-mode section {
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+h1, h2, h3 {
+    color: #0056b3;
+    align-items: center;
+}
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #87ceeb;
+}
+.skill-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.skill-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.skill-btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+#skill-description {
+    margin-top: 15px;
+    font-style: italic;
+    min-height: 20px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
+}
+#themeToggle {
+    background-color: #ffc107;
+    color: #333;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+#themeToggle:hover {
+    background-color: #e0a800;
+}
+.project-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: left;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+body.dark-mode .project-card {
+    background-color: #444;
+    border-color: #555;
+}
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+.project-card h3 {
+    color: #007bff;
+    margin-top: 0;
+}
+body.dark-mode .project-card h3 {
+    color: #87ceeb;
+}

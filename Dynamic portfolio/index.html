@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dynamic Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="OIP.jpg" alt="Levi Profile" id="profile-img">
+        <h1>Hello, I'm Eromonsele Inegbedion</h1>
+        <p>As a detail-oriented and creative problem-solver, I thrive in environments where innovation and collaboration come together. I'm excited to continue learning and growing as a developer, taking on new challenges and pushing the boundaries of what's possible on the web.</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Eromonsele, a passionate web developer with a love for creating engaging and user-friendly digital experiences. With a strong foundation in HTML, CSS, and JavaScript, I enjoy bringing ideas to life through code. My focus is on building responsive web applications that are both visually appealing and highly functional.
+                </p>
+        </section>
+
+        <section id="multimedia-showcase">
+            <h2>Multimedia Showcase</h2>
+            <h3>My Audio Greeting:</h3>
+            <audio controls>
+                <source src="Caleb University School Anthem.mp3" type="audio/mpeg">
+              
+            </audio>
+
+            <h3>A Quick Project Video:</h3>
+            <video controls width="320" height="240">
+                <source src="Caleb University School Anthem.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="interactive-skills">
+            <h2>My Skills</h2>
+            <div class="skill-buttons">
+                <button class="skill-btn" data-skill="HTML">HTML</button>
+                <button class="skill-btn" data-skill="CSS">CSS</button>
+                <button class="skill-btn" data-skill="JavaScript">JavaScript</button>
+            </div>
+            <p id="skill-description">Click a skill to learn more!</p>
+        </section>
+
+        <section id="portfolio-list">
+            <h2>My Projects</h2>
+            <div id="projects-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Eromonsele. All rights reserved.</p>
+        <button id="themeToggle">Toggle Dark Mode</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
